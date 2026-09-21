@@ -1,0 +1,124 @@
+```css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+
+    background:
+        radial-gradient(circle at top, #3d285c, #171122 60%, #09070d);
+
+    color: #f5e9c8;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+
+    padding: 40px 25px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.intro {
+    margin-bottom: 30px;
+    color: #d8c9e8;
+}
+
+/* CARTA */
+
+.carta {
+    width: 190px;
+    height: 300px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #211531, #563579);
+
+    border: 3px solid #d8b86a;
+
+    box-shadow:
+        0 0 15px rgba(216, 184, 106, 0.4),
+        0 15px 35px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.6s ease;
+}
+
+.carta:hover {
+    transform: translateY(-8px) rotate(1deg);
+}
+
+.dorso {
+    width: 140px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #d8b86a;
+
+    color: #d8b86a;
+
+    font-size: 4rem;
+}
+
+/* INFORMACIÓN */
+
+h2 {
+    margin-bottom: 15px;
+}
+
+#significado {
+    min-height: 50px;
+    margin-bottom: 25px;
+
+    line-height: 1.6;
+
+    color: #ddd0e9;
+}
+
+/* BOTÓN */
+
+button {
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #d8b86a;
+    color: #24162e;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 15px rgba(216, 184, 106, 0.6);
+}
+```
