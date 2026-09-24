@@ -49,15 +49,14 @@ function revelarCarta() {
 
     const musica = document.getElementById("musica");
 
-    musica.volume = 0.5;
+musica.volume = 0.5;
+musica.currentTime = 0;
 
-    if (musica.paused) {
-        musica.play().catch(error => {
-            console.log("No se pudo reproducir la música:", error);
-        });
-    } else {
-        musica.pause();
-    }
+musica.play().then(() => {
+    console.log("La música comenzó");
+}).catch(error => {
+    console.log("Error de música:", error);
+});
 
-    carta.classList.add("revelada");
+carta.classList.add("revelada");
 }
