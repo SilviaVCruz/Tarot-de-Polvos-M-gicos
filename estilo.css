@@ -260,10 +260,10 @@ body::after {
     }
 
     .carta {
-        width: 220px;
-        height: 350px;
-        margin-bottom: 30px;
-    }
+    width: 190px;
+    height: 300px;
+    margin-bottom: 30px;
+}
 
     h2 {
         font-size: 1.4rem;
