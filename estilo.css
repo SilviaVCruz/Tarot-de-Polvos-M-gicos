@@ -115,6 +115,10 @@ h1 {
     transform: rotateY(0deg);
 }
 
+.carta.revelada {
+    filter: drop-shadow(0 0 25px rgba(216, 184, 106, 0.95));
+}
+
 /* INFORMACIÓN */
 
 h2 {
