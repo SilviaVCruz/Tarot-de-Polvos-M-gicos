@@ -55,9 +55,14 @@ musica.play();
     const musica = document.getElementById("musica");
 
 musica.volume = 0.5;
-musica.play().catch(error => {
-    console.log("No se pudo reproducir la música:", error);
-});
+
+if (musica.paused) {
+    musica.play().catch(error => {
+        console.log("No se pudo reproducir la música:", error);
+    });
+} else {
+    musica.pause();
+}
 
 }
 
