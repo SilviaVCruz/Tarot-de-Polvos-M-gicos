@@ -47,16 +47,5 @@ function revelarCarta() {
     nombreCarta.textContent = cartaElegida.nombre;
     significado.textContent = cartaElegida.significado;
 
-    const musica = document.getElementById("musica");
-
-musica.volume = 0.5;
-musica.currentTime = 0;
-
-musica.play().then(() => {
-    console.log("La música comenzó");
-}).catch(error => {
-    console.log("Error de música:", error);
-});
-
-carta.classList.add("revelada");
+    carta.classList.add("revelada");
 }
