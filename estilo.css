@@ -42,8 +42,7 @@ h1 {
 .carta {
     width: 190px;
     height: 300px;
-    margin: 0 auto 25px;
-
+    margin: 0 auto 40px;
     position: relative;
     perspective: 1000px;
 
@@ -108,8 +107,8 @@ h1 {
 /* CONTENIDO DE LA CARTA */
 
 .simbolo {
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
 .nombre-carta {
