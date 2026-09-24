@@ -240,3 +240,42 @@ body::after {
 
     opacity: 0.75;
 }
+
+/* ADAPTACIÓN PARA CELULAR */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        width: 94%;
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .intro {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .carta {
+        width: 220px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    #significado {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
