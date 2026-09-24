@@ -162,6 +162,23 @@ body::after {
     z-index: 0;
 }
 
+body::before {
+    animation: titilarEstrellas 4s ease-in-out infinite;
+}
+
+body::after {
+    animation: titilarEstrellas 6s ease-in-out infinite reverse;
+}
+
+@keyframes titilarEstrellas {
+    0%, 100% {
+        opacity: 0.55;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
 /* Capa de estrellas pequeñas */
 body::before {
     background-image:
