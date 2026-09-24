@@ -51,6 +51,7 @@ h1 {
     filter: drop-shadow(0 0 14px rgba(216, 184, 106, 0.75));
      animation: energiaMagica 3s ease-in-out infinite;
 }
+}
 
 @keyframes energiaMagica {
     0%, 100% {
