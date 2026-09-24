@@ -85,21 +85,20 @@ h1 {
 /* FRENTE */
 
 .frente {
-    background: linear-gradient(135deg, #f5e9c8, #d8b86a);
-
+    background: #f5e9c8;
     color: #24162e;
-
-    flex-direction: column;
-
     transform: rotateY(180deg);
+    overflow: hidden;
 }
 
 #imagenCarta {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    display: block;
     border-radius: 12px;
 }
+
 /* CUANDO SE REVELA */
 
 .carta.revelada .dorso {
