@@ -48,23 +48,16 @@ function revelarCarta() {
     significado.textContent = cartaElegida.significado;
 
     const musica = document.getElementById("musica");
-musica.play();
 
-     carta.classList.add("revelada");
+    musica.volume = 0.5;
 
-    const musica = document.getElementById("musica");
+    if (musica.paused) {
+        musica.play().catch(error => {
+            console.log("No se pudo reproducir la música:", error);
+        });
+    } else {
+        musica.pause();
+    }
 
-musica.volume = 0.5;
-
-if (musica.paused) {
-    musica.play().catch(error => {
-        console.log("No se pudo reproducir la música:", error);
-    });
-} else {
-    musica.pause();
+    carta.classList.add("revelada");
 }
-
-}
-
-    
-
