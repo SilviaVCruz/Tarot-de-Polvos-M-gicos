@@ -179,7 +179,7 @@ body::before {
         40px 70px,
         80px 30px;
 
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 /* Estrellas más suaves y dispersas */
@@ -196,5 +196,5 @@ body::after {
         25px 45px,
         70px 10px;
 
-    opacity: 0.5;
+    opacity: 0.75;
 }
