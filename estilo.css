@@ -48,7 +48,7 @@ h1 {
     position: relative;
     perspective: 1000px;
     cursor: pointer;
-    filter: drop-shadow(0 0 8px rgba(216, 184, 106, 0.35));
+    filter: drop-shadow(0 0 14px rgba(216, 184, 106, 0.75));
 }
 
 .cara {
