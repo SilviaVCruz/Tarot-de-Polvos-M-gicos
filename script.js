@@ -39,18 +39,13 @@ function revelarCarta() {
     const carta = document.getElementById("carta");
     const imagenCarta = document.getElementById("imagenCarta");
     const nombreCarta = document.getElementById("nombreCarta");
-    const nombreCartaEnCarta =
-        document.getElementById("nombreCartaEnCarta");
     const significado = document.getElementById("significado");
 
-    // Colocamos la imagen y la información correspondiente
     imagenCarta.src = cartaElegida.imagen;
     imagenCarta.alt = "Carta del Tarot " + cartaElegida.nombre;
 
     nombreCarta.textContent = cartaElegida.nombre;
-    nombreCartaEnCarta.textContent = cartaElegida.nombre;
     significado.textContent = cartaElegida.significado;
 
-    // Revelamos la carta
     carta.classList.add("revelada");
 }
