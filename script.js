@@ -56,5 +56,7 @@ musica.play().catch(error => {
     console.log("No se pudo reproducir la música:", error);
 });
 
+}
+
     
 
