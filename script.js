@@ -2,21 +2,21 @@
 const cartas = [
     {
         nombre: "El Sol",
-        imagen: "imagenes/el-sol.jpg",
+        imagen: "el-sol.jpg",
         significado:
             "Claridad, alegría y energía positiva. Esta carta habla de vitalidad, confianza, éxito y de la posibilidad de ver una situación con mayor claridad."
     },
 
     {
         nombre: "La Luna",
-        imagen: "imagenes/la-luna.jpg",
+        imagen: "la-luna.jpg",
         significado:
             "Intuición, sueños y emociones profundas. La Luna invita a observar aquello que no resulta evidente y a escuchar la propia percepción."
     },
 
     {
         nombre: "La Estrella",
-        imagen: "imagenes/la-estrella.jpg",
+        imagen: "la-estrella.jpg",
         significado:
             "Esperanza, inspiración y renovación. Representa confianza, recuperación y la posibilidad de mirar hacia adelante con una nueva perspectiva."
     }
