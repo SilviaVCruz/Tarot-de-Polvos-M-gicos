@@ -2,27 +2,27 @@
 const cartas = [
     {
         nombre: "El Sol",
-        simbolo: "☀️",
+        imagen: "imagenes/el-sol.jpg",
         significado:
-            "Claridad, alegría y energía positiva. Es un momento para confiar en tu camino."
+            "Claridad, alegría y energía positiva. Esta carta habla de vitalidad, confianza, éxito y de la posibilidad de ver una situación con mayor claridad."
     },
 
     {
         nombre: "La Luna",
-        simbolo: "🌙",
+        imagen: "imagenes/la-luna.jpg",
         significado:
-            "Intuición, sueños y emociones profundas. Observa lo que tu mundo interior intenta decirte."
+            "Intuición, sueños y emociones profundas. La Luna invita a observar aquello que no resulta evidente y a escuchar la propia percepción."
     },
 
     {
         nombre: "La Estrella",
-        simbolo: "⭐",
+        imagen: "imagenes/la-estrella.jpg",
         significado:
-            "Esperanza, inspiración y renovación. Hay motivos para mirar hacia adelante con confianza."
+            "Esperanza, inspiración y renovación. Representa confianza, recuperación y la posibilidad de mirar hacia adelante con una nueva perspectiva."
     }
 ];
 
-let ultimaCarta = null;
+let ultimaCarta = -1;
 
 function revelarCarta() {
 
@@ -37,27 +37,20 @@ function revelarCarta() {
     const cartaElegida = cartas[numero];
 
     const carta = document.getElementById("carta");
+    const imagenCarta = document.getElementById("imagenCarta");
     const nombreCarta = document.getElementById("nombreCarta");
-    const significado = document.getElementById("significado");
-
-    const simboloCarta = document.getElementById("simboloCarta");
     const nombreCartaEnCarta =
         document.getElementById("nombreCartaEnCarta");
+    const significado = document.getElementById("significado");
 
-    // Primero regresamos la carta al dorso
-    carta.classList.remove("revelada");
+    // Colocamos la imagen y la información correspondiente
+    imagenCarta.src = cartaElegida.imagen;
+    imagenCarta.alt = "Carta del Tarot " + cartaElegida.nombre;
 
-    // Esperamos un poco para que empiece la animación
-    setTimeout(() => {
+    nombreCarta.textContent = cartaElegida.nombre;
+    nombreCartaEnCarta.textContent = cartaElegida.nombre;
+    significado.textContent = cartaElegida.significado;
 
-        simboloCarta.textContent = cartaElegida.simbolo;
-        nombreCartaEnCarta.textContent = cartaElegida.nombre;
-
-        nombreCarta.textContent = cartaElegida.nombre;
-        significado.textContent = cartaElegida.significado;
-
-        // Volteamos la carta
-        carta.classList.add("revelada");
-
-    }, 300);
+    // Revelamos la carta
+    carta.classList.add("revelada");
 }
