@@ -49,3 +49,8 @@ function revelarCarta() {
 
     carta.classList.add("revelada");
 }
+
+const musica = document.getElementById("musica");
+
+musica.play();
+}
