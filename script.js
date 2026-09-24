@@ -47,6 +47,9 @@ function revelarCarta() {
     nombreCarta.textContent = cartaElegida.nombre;
     significado.textContent = cartaElegida.significado;
 
+    const musica = document.getElementById("musica");
+musica.play();
+
      carta.classList.add("revelada");
 
     const musica = document.getElementById("musica");
