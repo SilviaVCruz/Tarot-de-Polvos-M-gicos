@@ -1,4 +1,4 @@
-```javascript
+
 const cartas = [
     {
         nombre: "☀️ El Sol",
@@ -33,4 +33,4 @@ function revelarCarta() {
         `<div class="dorso">✦</div>`;
 
 }
-```
+
