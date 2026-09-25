@@ -282,6 +282,9 @@ body::after {
     .musica {
     margin-top: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .musica span {
