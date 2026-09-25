@@ -298,8 +298,7 @@ body::after {
 }
 
 .musica audio {
-    width: 190px;
-    max-width: 45vw;
+    display: none;
 }
 
 /* Música en celular */
